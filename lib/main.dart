@@ -1,3 +1,4 @@
+import 'package:e_commerce/utilities/router.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,11 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Ecommerce App",
-      theme: ThemeData(primaryColor: Colors.blue),
+      theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xFFE5E5E5),
+        primaryColor: Colors.red,
+      ),
       home: Container(),
-      onGenerateRoute: (settings) {
-        
-      },
+      onGenerateRoute: onGenerate,
     );
   }
 }
